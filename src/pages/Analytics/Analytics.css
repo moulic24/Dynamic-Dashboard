@@ -1,0 +1,33 @@
+/* .analytics{
+     display: flex;
+        justify-content: center;
+        align-items: center;
+       max-height: max-content;
+       height: 700px;
+       width: auto;
+ padding: 20px;   
+} */
+.analytics_main{
+   
+        /* min-height: 100vh;
+        max-height: max-content;
+        padding: 10px; */
+        height: 700px;
+        display: flex;
+        flex: start;
+       
+}
+.ana{
+        flex: start;
+        
+}
+.header{
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        margin: 2px;
+        flex: start; 
+        backdrop-filter: "blur(10px)";
+        box-shadow: 5px 5px 5px rgba(30,30,30,0.5);
+        background-image:linear-gradient(to bottom right,rgba(255,255,255,0.2), rgba(255,255,255,0));
+}

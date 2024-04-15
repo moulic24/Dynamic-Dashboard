@@ -1,0 +1,206 @@
+/* .card{
+   
+ 
+    body {
+        background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+        background-position: center;
+    }
+    
+   
+        backdrop-filter: blur(11px) saturate(180%);
+        -webkit-backdrop-filter: blur(11px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.75);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    
+    
+} */
+.reports_main{
+    height: 100vh;
+    overflow: auto;
+    caret-color: transparent;
+        min-height: 100vh;
+        max-height: max-content;
+        padding: 10px;
+       
+     
+}
+
+.reports_content{
+    display: flex;
+    flex-direction: column;
+     margin-left: 30px; 
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+    width: auto;
+    
+}
+
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.export{
+    /* border: 1px solid #000000; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    
+}
+
+.export option{
+    font-size: 14px;
+}
+
+.generate-btn{
+    background-color:  #2e483e ;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.generate-btn:hover{
+    background-color: #ffffff;
+    color: #74b49b;
+    font-weight: bold;
+    border: 1px solid #3182CE;
+}
+
+.table{
+    width: 100%;
+    overflow: auto;
+}
+
+table,th,td{
+    /* border:1px solid #000000; */
+    border-collapse: collapse;
+}
+
+th,td{
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    padding: 18px; 
+}
+
+th{
+    font-size: 18px;
+}
+
+td{
+    font-size: 16px;
+}
+
+thead th{
+    padding: 22px;
+}
+
+.table-container{
+    overflow: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #000000; */
+}
+
+/* .tr-dark{
+    border-bottom: 1px solid #ffffff;
+}
+
+.tr-light{
+    border-bottom: 1px solid #000000;
+} */
+
+thead tr{
+    background-color: #13543a;
+    color: #ffffff !important;
+    backdrop-filter: "blur(10px)";
+    /* box-shadow: 10px 10px 10px rgba(30,30,30,0.5); */
+    background-image:linear-gradient(to bottom right,rgba(255,255,255,0.2), rgba(255,255,255,0));
+}
+
+.tr-dark:nth-child(even){
+    background-color: #1e345b;
+    backdrop-filter: "blur(10px)";
+    /* box-shadow: 10px 10px 10px rgba(30,30,30,0.5); */
+    background-image:linear-gradient(to bottom right,rgba(255,255,255,0.2), rgba(255,255,255,0));
+}
+
+.tr-light:nth-child(even){
+    background-color: #eeeeee;
+    backdrop-filter: "blur(10px)";
+    /* box-shadow: 10px 10px 10px rgba(30,30,30,0.5); */
+    background-image:linear-gradient(to bottom right,rgba(255,255,255,0.2), rgba(255,255,255,0));
+}
+
+
+.dates{
+    /* border: 1px solid #000000; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.tfoot{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    float: right;
+}
+
+.count{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.image-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.download-btn{
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #3182CE;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.download-btn:hover{
+    background-color: #ffffff;
+    color: #3182CE;
+    border: 2px solid #3182CE;
+}
+
+.stud_img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width:800px) {
+    .stud_img{
+      height:60%;
+      width:50%;
+    }
+  } 

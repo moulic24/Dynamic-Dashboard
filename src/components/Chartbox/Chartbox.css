@@ -1,0 +1,32 @@
+.chartbox{
+    display: flex;
+    gap: 20px;
+}
+.chart{
+    height: 12vh;
+    width: 10vw;
+}
+.chartinfo{
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    padding-left: 2px;
+}
+.title{
+ display: flex;   
+}
+.total{
+    padding-top: 6px;
+    padding-left: 6px;
+}
+.chart-h1{
+    padding-left: 12px;
+}
+.chart-view{
+    padding-left: 12px;  
+}

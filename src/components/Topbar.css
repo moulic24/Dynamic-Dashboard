@@ -1,0 +1,39 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     background-color: #acd2c3; 
+    height: 60px;
+    /* width: 100%; */
+    caret-color: transparent;
+    width: auto;
+}
+.nav-active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     background-color: #141b2d; 
+    height: 60px;
+    width: auto;
+    caret-color: transparent;
+    
+}
+.custom-switch {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    margin-left: auto; /* Adjust margin as needed */
+    
+  }
+  
+/* gray: {
+    100: "#e3f0eb",
+    200: "#c7e1d7",
+    300: "#acd2c3",
+    400: "#90c3af",
+    500: "#74b49b",
+    600: "#5d907c",
+    700: "#466c5d",
+    800: "#2e483e",
+    900: "#17241f"
+}, */

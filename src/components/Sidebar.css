@@ -1,0 +1,280 @@
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Andada Pro", serif;
+    background-color:#f4f9f4;
+    text-transform: capitalize;
+}
+/* 
+h1 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  
+   padding: 10px;
+    width: 15rem;
+    height: 100vh;
+        transition: 0.5s ;
+
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        h2 {
+            font-size: 31.42px;
+            color: #74b49b;
+            padding: 0 0 0 1rem;
+            
+        }
+    }
+
+    .burgerContainer {
+        content: "";
+        background-color: #74b49b;
+        position: absolute;
+        right: calc(-35px / 2); 
+        top: calc(8rem / 1.15);
+        width: 35px;
+        height: 35px;
+        border-radius: 3rem;
+        z-index: 1;
+
+        .burgerTrigger {
+            content: "";
+            width: 35px;
+            /* height: 35px; */
+            height: 35px;
+            background-color: red;
+            cursor: pointer;
+            z-index: 6;
+            opacity: 0;
+            position: relative;
+        }
+
+        .burgerMenu {
+            content: "";
+            background-color: #74b49b; 
+            position: relative;
+            z-index: 1;
+            width: 20px;
+            height: 3px;
+            border-radius: 2rem;
+            bottom: calc(35px / 2);
+            left: 0.45rem;
+            transition: 0.5s all;
+        }
+
+        .burgerMenu::after {
+            content: "";
+            background-color: #ffffff;
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            border-radius: 2rem;
+            top: 0.4rem;
+            transform: translateY(-0.4rem) rotate(45deg);
+            transition: 0.5s all;
+        }
+
+        .burgerMenu::before {
+            content: "";
+            background-color: #ffffff;
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            border-radius: 2rem;
+            top: -0.4rem;
+            transform: translateY(0.4rem) rotate(-45deg);
+            transition: 0.5s all;
+        }
+    }
+
+    .burgerContainer::after {
+        content: "";
+        position: absolute;
+        right: 35px;
+        top: calc(5px / 2);
+        z-index: 0;
+        width: calc(6rem + 15rem);
+        background-color: #f2f2f2;
+        height: 2px;
+        transition: 0.5s all;
+    }
+
+    .profileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3rem 0 0 0;
+
+        img {
+            width: auto;
+            height: 3rem;
+        }
+
+        .profileContents {
+            padding: 0 0 0 1rem;
+
+            p.name {
+                padding: 0;
+                margin: 0;
+                font-size: 16.7px;
+                color: #74b49b;
+                text-transform: capitalize;
+                font-weight:800;
+                transition: 0.5s;
+            }
+               
+
+            p {
+                padding: 0;
+                margin: 0;
+                font-size: 13.9px;
+                color: #5c8d89;
+                /* color: #5c8d89; */
+                text-transform: lowercase;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .contentsContainer {
+        margin: 2rem 0 0 0;
+        transition: 0.5s;
+
+        ul {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                margin: 0.75rem 0;
+                padding: 0.75rem 0;
+                width: 100%;
+                border-radius: 1rem;
+                cursor: pointer;
+
+                img {
+                    padding: 0 1rem 0 0.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #5c8d89;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0 0 0 0.5rem;
+                }
+            }
+
+            li.active {
+                background-color:#f4f9f4;
+
+                a {
+                    color: #74b49b;
+                }
+            }
+
+            li:hover {
+                background-color: #f2f2f2;
+                transition: 0.25s;
+            }
+        }
+    }
+}
+  
+
+.dark1{
+background-color: #ffffff;
+}
+/* .dark1 .title{
+color: white;
+} */
+
+.light{
+    background-color: #1F2A40;
+}
+
+
+
+.sidebar.active {
+    width: 3rem;
+    transition: 0.3s all;
+    .logo{
+        
+   padding-right: 0px;
+    }
+    .logoContainer.active {
+        h2.title {
+            opacity: 0;
+            transition: 0.3s all;
+        }
+    }
+
+    .burgerContainer.active {
+        transition: 0.5s all;
+        .burgerMenu {
+            background-color: #ffffff;
+            transition: 0.3s all;
+        }
+
+        .burgerMenu::before {
+            transform: translateY(0rem) rotate(0deg);
+            transition: 0.3s all;
+        }
+
+        .burgerMenu::after {
+            transform: translateY(0rem) rotate(0deg);
+            transition: 0.3s all;
+        }
+    }
+
+    .profileContainer {
+        .profileContents {
+            opacity: 0;
+            transition: 0.3s all;
+        }
+    }
+
+    .contentsContainer {
+        a {
+            opacity: 0;
+            transition: 0.3s all;
+        }
+    }
+}
+
+/* gray: {
+    100: "#e3f0eb",
+    200: "#c7e1d7",
+    300: "#acd2c3",
+    400: "#90c3af",
+    500: "#74b49b",
+    600: "#5d907c",
+    700: "#466c5d",
+    800: "#2e483e",
+    900: "#17241f"
+}, */
